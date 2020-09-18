@@ -1,12 +1,13 @@
 #pragma once
 
-#undef BACKLIGHT_LEVELS
-#define BACKLIGHT_LEVELS 5
+#undef  TAPPING_TERM
+#define TAPPING_TERM 149
 
-#define TAPPING_TERM 165
+#undef COMBO_TERM
+#define COMBO_TERM 45
 
-#define COMBO_TERM 100
-#define COMBO_COUNT 3
+#undef COMBO_COUNT
+#define COMBO_COUNT 16
 
 // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT
