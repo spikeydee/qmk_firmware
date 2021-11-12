@@ -6,18 +6,24 @@ enum combo_events {
   MEDR_COMBO,
   DEL_COMBO,
   APP_COMBO,
+  BTN3_COMBO,
+  LPRN_COMBO,
 };
 
 const uint16_t PROGMEM funl_combo[] = {LT(NSSL, KC_ENT), LT(NSL, KC_BSPC), COMBO_END};
 const uint16_t PROGMEM medr_combo[] = {LT(NAVR, KC_SPC), LT(MOUR, KC_TAB), COMBO_END};
 const uint16_t PROGMEM del_combo[] = {KC_ENT, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM app_combo[] = {KC_SPC, KC_TAB, COMBO_END};
+const uint16_t PROGMEM btn3_combo[] = {KC_BTN1, KC_BTN2, COMBO_END};
+const uint16_t PROGMEM lprn_combo[] = {KC_RPRN, KC_UNDS, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT]	= {
     [FUNL_COMBO] = COMBO(funl_combo, LT(FUNL, KC_DEL)),
 	[MEDR_COMBO] = COMBO(medr_combo, LT(MEDR, KC_ESC)),
 	[DEL_COMBO]	 = COMBO(del_combo, KC_DEL),
-	[APP_COMBO]  = COMBO(app_combo, KC_APP), 
+	[APP_COMBO]  = COMBO(app_combo, KC_APP),
+	[BTN3_COMBO] = COMBO(btn3_combo, KC_BTN3),	
+	[LPRN_COMBO] = COMBO(lprn_combo, KC_LPRN),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -70,13 +76,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [NSL] = LAYOUT_exr(
     KC_LBRC, KC_7,    KC_8,    KC_9,    KC_RBRC, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_RST,
     KC_SCLN, KC_4,    KC_5,    KC_6,    KC_EQL,  KC_NA,   KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,
-    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_BSLS, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
+    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_BSLS, KC_NA,   KC_NA,   KC_COMM, KC_DOT,   KC_SLSH,
     KC_NP,   KC_NP,   KC_DOT,  KC_0,    KC_MINS, KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
   ),
   [NSSL] = LAYOUT_exr(
     KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_RST,
     KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_PLUS, KC_NA,   KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,
-    KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE, KC_NA,   KC_NA,   KC_NA,   KC_NA,   KC_NA,
+    KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE, KC_NA,   KC_NA,   KC_COMM, KC_DOT,   KC_SLSH,
     KC_NP,   KC_NP,   KC_LPRN, KC_RPRN, KC_UNDS, KC_NA,   KC_NA,   KC_NA,   KC_NP,   KC_NP
   ),
   [GAME] = LAYOUT_exr(
