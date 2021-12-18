@@ -5,8 +5,8 @@
 
 #define TAPPING_TERM 165
 
-#define COMBO_TERM 100
-#define COMBO_COUNT 6
+#define COMBO_TERM 50
+#define COMBO_COUNT 8
 
 
 //forces NKRO for supported keyboards
