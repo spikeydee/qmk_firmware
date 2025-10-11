@@ -1,0 +1,76 @@
+{
+"manufacturer": "spikeydee",
+"keyboard_name": "splitsies",
+"maintainer": "spikeydee",
+"bootloader": "caterina",
+  "usb": {
+    "vid": "0xFEED",
+    "pid": "0x0001",
+    "device_version": "1.0.0"
+  },
+    "bootmagic": {
+        "enabled": false
+    },
+    "debounce": 5,
+    "development_board": "promicro",
+    "height": 4,
+    "matrix_pins": {
+        "direct": [
+            ["D1", "F5", "D4", "B1", "E6"],
+            ["F4", "D0", "F7", "D7", "B2"],
+            ["D3", "F6", "C6", "B3", "B4"],
+            ["B6", "B5", "NO_PIN", "NO_PIN", "NO_PIN"]
+        ]
+    },
+    "mouse_key": {
+        "enabled": true
+    },
+    "processor": "atmega32u4",
+    "split": {
+        "enabled": true,
+        "serial": {
+            "pin": "D2"
+        }
+    },
+    "width": 11,
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "Q", "x": 0, "y": 0},
+                {"label": "W", "x": 1, "y": 0},
+                {"label": "E", "x": 2, "y": 0},
+                {"label": "R", "x": 3, "y": 0},
+                {"label": "T", "x": 4, "y": 0},
+                {"label": "Y", "x": 6, "y": 0},
+                {"label": "U", "x": 7, "y": 0},
+                {"label": "I", "x": 8, "y": 0},
+                {"label": "O", "x": 9, "y": 0},
+                {"label": "P", "x": 10, "y": 0},
+                {"label": "A", "x": 0, "y": 1},
+                {"label": "S", "x": 1, "y": 1},
+                {"label": "D", "x": 2, "y": 1},
+                {"label": "F", "x": 3, "y": 1},
+                {"label": "G", "x": 4, "y": 1},
+                {"label": "H", "x": 6, "y": 1},
+                {"label": "J", "x": 7, "y": 1},
+                {"label": "K", "x": 8, "y": 1},
+                {"label": "L", "x": 9, "y": 1},
+                {"label": ":", "x": 10, "y": 1},
+                {"label": "Z", "x": 0, "y": 2},
+                {"label": "X", "x": 1, "y": 2},
+                {"label": "C", "x": 2, "y": 2},
+                {"label": "V", "x": 3, "y": 2},
+                {"label": "B", "x": 4, "y": 2},
+                {"label": "N", "x": 6, "y": 2},
+                {"label": "M", "x": 7, "y": 2},
+                {"label": "<", "x": 8, "y": 2},
+                {"label": ">", "x": 9, "y": 2},
+                {"label": "?", "x": 10, "y": 2},
+                {"label": "Shift", "x": 3, "y": 3},
+                {"label": "Esc", "x": 4, "y": 3},
+                {"label": "Space", "x": 6, "y": 3},
+                {"label": "Ent", "x": 7, "y": 3}
+            ]
+        }
+    }
+}
